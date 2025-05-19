@@ -49,25 +49,29 @@
         android:id="@+id/chkSaveLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_login_save_login_infor" />
+        android:text="@string/title_login_save_login_infor"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="51dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <Button
             android:onClick="do_login"
             android:id="@+id/btnLogin"
-            android:layout_width="195dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_login_button_login" />
+            android:layout_weight="1"
+            android:text="@string/title_login_button_login"
+            android:textSize="24sp" />
 
         <ImageView
             android:id="@+id/imgExit"
             android:layout_width="wrap_content"
-            android:layout_height="47dp"
+            android:layout_height="51dp"
             android:layout_weight="1"
+            android:onClick="do_exit"
             app:srcCompat="@mipmap/ic_exit" />
     </LinearLayout>
 </LinearLayout>
