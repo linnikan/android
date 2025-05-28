@@ -23,5 +23,21 @@
     <string name="title_normal">Normal</string>
     <string name="title_fat">FAT</string>
     <string name="title_category">Category</string>
-    <string name="title_product">Products</string>
+    <string name="title_product">Product</string>
+    <string name="title_advanced_product">Advanced Product</string>
+    <string name="title_new_customer">New Customer</string>
+    <string name="title_broadcast_advertising">Broadcast Advertising</string>
+    <string name="title_help">Help</string>
+    <string name="title_customer_detail">Customer Details</string>
+    <string name="title_customer_id">Customer ID:</string>
+    <string name="title_customer_name">Customer Name:</string>
+    <string name="title_customer_email">Customer Email:</string>
+    <string name="title_customer_phone">Customer Phone:</string>
+    <string name="title_new">NEW</string>
+    <string name="title_save">SAVE</string>
+    <string name="title_remove">REMOVE</string>
+    <string name="title_sort_by_price">Sort by Price</string>
+    <string name="title_favorite_products">Favorite Products</string>
+    <string name="title_view_cart">View Cart</string>
+    <string name="title_purchase_history">Purchase History</string>
 </resources>

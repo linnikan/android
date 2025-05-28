@@ -1,15 +1,24 @@
 package com.example.models;
 
-import androidx.annotation.NonNull;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Category implements Serializable {
     private int id;
     private String name;
-//    private int image_id;
-    private String description;
+    private int image_id;
+    private ArrayList<Product>products;
+
+    public Category() {
+        products=new ArrayList<>();
+    }
+
+    public Category(int id, String name, int image_id) {
+        this.id = id;
+        this.name = name;
+        this.image_id = image_id;
+        products=new ArrayList<>();
+    }
 
     public int getId() {
         return id;
@@ -27,32 +36,28 @@ public class Category implements Serializable {
         this.name = name;
     }
 
-    public String getDiscription() {
-        return description;
+    public int getImage_id() {
+        return image_id;
     }
 
-    public void setDiscription(String discription) {
-        this.description = discription;
+    public void setImage_id(int image_id) {
+        this.image_id = image_id;
     }
 
-    public Category() {
-//        products=new ArrayList<>();
+    public ArrayList<Product> getProducts() {
+        return products;
     }
-    public Category(int id, String name, String discription) {
-        this.id = id;
-        this.name = name;
-//        this.image_id=image_id;
-        this.description = discription;
-//        products=new ArrayList<>();
+
+    public void setProducts(ArrayList<Product> products) {
+        this.products = products;
     }
-    @NonNull
+
     @Override
     public String toString() {
-        return id + " - " + name + "\n" + description;
+        return id+"\t"+name;
     }
-
-//    public void addProduct(Product p);
-//    {
-//        products.add(p);
-//    }
+    public  void addProduct(Product p)
+    {
+        products.add(p);
+    }
 }

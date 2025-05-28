@@ -19,10 +19,12 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView imgCustomer;
     TextView txtCustomer;
-    ImageView imgCategory;
-    TextView txtCategory;
+
     ImageView imgProduct;
     TextView txtProduct;
+
+    ImageView imgAdvancedProduct;
+    TextView txtAdvancedProduct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,21 +69,43 @@ public class MainActivity extends AppCompatActivity {
              }
          });
 
-        imgCategory.setOnClickListener(new View.OnClickListener() {
+        imgProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openCategoryManagementActivity();
+                openProductManagementActivity();
             }
         });
-        txtCategory.setOnClickListener(new View.OnClickListener() {
+        txtProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openCategoryManagementActivity();
+                openProductManagementActivity();
             }
         });
 
-
+        imgAdvancedProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openAdvancedProductManagementActivity();
+            }
+        });
+        txtAdvancedProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openAdvancedProductManagementActivity();
+            }
+        });
         }
+
+    private void openAdvancedProductManagementActivity() {
+        Intent intent=new Intent(MainActivity.this, AdvancedProductManagementActivity.class);
+        startActivity(intent);
+    }
+
+    private void openProductManagementActivity() {
+        Intent intent=new Intent(MainActivity.this, ProductManagementActivity.class);
+        startActivity(intent);
+    }
+
     void openEmployeeManagementActivity()
     {
         Intent intent=new Intent(MainActivity.this, EmployeeManagementActivity.class);
@@ -92,21 +116,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(MainActivity.this, CustomerManagementActivity.class);
         startActivity(intent);
     }
-    void openCategoryManagementActivity()
-    {
-        Intent intent=new Intent(MainActivity.this, CategoryManagementActivity.class);
-        startActivity(intent);
-    }
-
 
     private void addViews() {
         imgEmployee=findViewById(R.id.imgEmployee);
         txtEmployee=findViewById(R.id.txtEmployee);
         imgCustomer=findViewById(R.id.imgCustomer);
         txtCustomer=findViewById(R.id.txtCustomer);
-        imgCategory=findViewById(R.id.imgCategory);
-        txtCategory=findViewById(R.id.txtCategory);
-
-
+        imgProduct=findViewById(R.id.imgProduct);
+        txtProduct=findViewById(R.id.txtProduct);
+        imgAdvancedProduct=findViewById(R.id.imgAdvancedProduct);
+        txtAdvancedProduct=findViewById(R.id.txtAdvancedProduct);
     }
 }

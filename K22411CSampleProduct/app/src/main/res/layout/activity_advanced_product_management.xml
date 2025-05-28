@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CategoryManagementActivity">
+    tools:context=".AdvancedProductManagementActivity">
 
     <ListView
-        android:id="@+id/lvCategory"
+        android:id="@+id/lvAdvancedProduct"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:listSelector="@color/material_dynamic_tertiary90" />

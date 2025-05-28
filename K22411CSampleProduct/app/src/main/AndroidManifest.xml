@@ -13,10 +13,13 @@
         android:theme="@style/Theme.K22411CSampleProduct"
         tools:targetApi="31">
         <activity
+            android:name=".CustomerDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProductManagementActivity"
             android:exported="false" />
         <activity
-            android:name=".CategoryManagementActivity"
+            android:name=".AdvancedProductManagementActivity"
             android:exported="false" />
         <activity
             android:name=".CustomerManagementActivity"

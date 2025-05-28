@@ -51,5 +51,18 @@ public class ListCustomer implements Serializable
 
         }
     }
+    public boolean isExist(Customer c)
+    {
+        for(Customer cus : customers)
+        {
+            if(cus.getId()==c.getId() ||
+                    cus.getPhone().equals(c.getPhone())||
+                    cus.getEmail().equalsIgnoreCase(c.getEmail())||
+                    cus.getUsername().equalsIgnoreCase(c.getUsername())
+            )
+                return true;
+        }
+        return false;
+    }
 }
 

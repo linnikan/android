@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_sort_by_price"
+        android:title="@string/title_sort_by_price"
+        android:enabled="true"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_favorite_products"
+        android:title="@string/title_favorite_products"
+        android:enabled="true"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_view_cart"
+        android:title="@string/title_view_cart"
+        android:enabled="true"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_purchase_history"
+        android:title="@string/title_purchase_history"
+        android:enabled="true"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>
